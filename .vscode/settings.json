@@ -2,4 +2,8 @@
     "python.pythonPath": "/home/shmro/Desktop/geekshop/venv/bin/python",
     "python.languageServer": "Pylance",
     "python.experiments.optOutFrom": ["All"],
+    "python.formatting.provider": "black",
+    "python.formatting.blackArgs": [
+        "-l 120"
+    ],
 }
