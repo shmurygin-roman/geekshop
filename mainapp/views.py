@@ -36,7 +36,7 @@ def get_same_products(hot_product):
 
 def products(request, pk=None):
     title = "продукты"
-    links_menu = ProductCategory.objects.all()
+    links_menu = ProductCategory.objects.filter(is_active = 1)
     basket = get_basket(request.user)
 
     if pk is not None:
@@ -80,7 +80,7 @@ def product(request, pk):
     title = "продукты"
     content = {
         "title": title,
-        "links_menu": ProductCategory.objects.all(),
+        "links_menu": ProductCategory.objects.filter(is_active = 1),
         "product": get_object_or_404(Product, pk=pk),
         "basket": get_basket(request.user),
         "media_url": settings.MEDIA_URL,
