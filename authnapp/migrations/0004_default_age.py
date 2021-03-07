@@ -8,7 +8,7 @@ from django.utils.timezone import utc
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('authnapp', '0003_auto_20210307_1225'),
+        ('authnapp', '0002_user_model_extend'),
     ]
 
     operations = [
