@@ -631,8 +631,10 @@ body {
 
 .container {
     width: 1366px;
+    max-width: 1366px;
     margin: 0 auto;
     min-height: 100%;
+    box-sizing: content-box;
 }
 
 .slider {
@@ -1225,6 +1227,7 @@ body {
     padding-right: 98px;
     margin: -384px auto 0;
     clear: both;
+    box-sizing: content-box;
 }
 
 .footer form {
