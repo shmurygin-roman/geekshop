@@ -11,6 +11,8 @@ class ShopUserAdminEditForm(ShopUserEditForm):
 
 
 class ProductCategoryEditForm(forms.ModelForm):
+    discount = forms.IntegerField(label="скидка", required=False, min_value=-200, max_value=200, initial=0)
+
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         for field_name, field in self.fields.items():
